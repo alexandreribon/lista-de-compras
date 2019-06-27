@@ -17,6 +17,7 @@ class ThizerList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Thizer Lista de Compras",
       theme: ThemeData(
         primaryColor: Layout.primaryColor(),
@@ -24,7 +25,7 @@ class ThizerList extends StatelessWidget {
         accentColor: Layout.secondaryColor(),
         textTheme: TextTheme(
           headline: TextStyle(fontSize: 72, fontWeight: FontWeight.bold),
-          title: TextStyle(fontSize: 36, fontStyle: FontStyle.italic, color: Layout.warningColor()),
+          title: TextStyle(fontSize: 36, fontStyle: FontStyle.italic, color: Layout.lightColor()),
           body1: TextStyle(fontSize: 14),
         ),
       ),

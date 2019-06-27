@@ -18,9 +18,16 @@ class Layout {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Layout.primaryColor(),
-        title: Center(
-          child: Text("Thizer Lista de Compras"),
-        ),
+        title: Text("Thizer Lista de Compras"),
+        centerTitle: true,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.add),
+            onPressed: () {
+              
+            },
+          ),
+        ],
       ),
       body: content,
       bottomNavigationBar: BottomNavigationBar(
